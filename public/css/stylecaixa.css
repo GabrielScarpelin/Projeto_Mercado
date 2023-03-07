@@ -1,0 +1,305 @@
+body {
+    background: #B1B3C2;
+    margin-bottom:0 ;
+    margin-top: 0;
+}
+
+div.container {
+    position: relative;
+    bottom: 74px;
+    left: 8px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 380px 450px 1fr;
+    row-gap: 30px;
+    margin-left: 333px;
+
+}
+
+div.caixaA {
+    display: grid;
+    grid-column: 1/3;
+
+
+    height: 70.66666412353516px;
+    width: 1248px;
+    left: 96px;
+    top: 144px;
+    border-radius: 8px;
+    background: hsla(0, 0%, 85%, 0.8);
+
+
+}
+
+h1.mercado {
+    margin: 20px;
+
+    color: #363A57;
+
+    font-family: 'Montserrat';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    height: 70.24468231201172px;
+    width: 360.1276550292969px;
+    left: 97px;
+    top: 16px;
+    border-radius: nullpx;
+
+}
+
+h2.joaquim {
+    color: white;
+
+
+    margin: 20px;
+    height: 31.659574508666992px;
+    width: 170.1702117919922px;
+    left: 185.05322265625px;
+    top: 77.34042358398438px;
+    border-radius: nullpx;
+
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+h1 {
+    font-size: larger;
+}
+
+div.caixaB {
+
+
+    color: rgba(16, 20, 56, 0.8);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 49px;
+
+}
+
+h1.caix {
+    margin: 0;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+
+div.codBar {
+    height: 93.33333587646484px;
+    width: 352px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: 8px;
+
+    display: grid;
+    grid-column: 1/2;
+    background-color: hsla(0, 0%, 85%, 0.8);
+}
+
+div.valUni {
+    height: 93.33333587646484px;
+    width: 352px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: 8px;
+
+    display: grid;
+    grid-column: 1;
+    background-color: hsla(0, 0%, 85%, 0.8);
+}
+
+div.totalItem {
+    height: 93.33333587646484px;
+    width: 352px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: 8px;
+
+    display: grid;
+    grid-column: 1;
+    background-color: hsla(0, 0%, 85%, 0.8);
+}
+
+div.codPro {
+    height: 93.33333587646484px;
+    width: 352px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: 8px;
+
+    display: grid;
+    grid-column: 1;
+    background-color: hsla(0, 0%, 85%, 0.8);
+}
+
+h1.barras {
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    background: rgba(16, 20, 56, 0.8);
+    height: 36px;
+    width: 352px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: [object Object]px;
+
+
+}
+
+h1.valor {
+    text-align: center;
+    height: 36px;
+    width: 352px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: [object Object]px;
+
+    margin-top: 0;
+    color: white;
+    background: rgba(16, 20, 56, 0.8);
+
+}
+
+h1.total {
+    text-align: center;
+    height: 36px;
+    width: 352px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: [object Object]px;
+
+    margin-top: 0;
+    color: white;
+    background: rgba(16, 20, 56, 0.8);
+
+}
+
+h1.produto {
+    text-align: center;
+    height: 36px;
+    width: 352px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: [object Object]px;
+
+    margin-top: 0;
+    color: white;
+    background: rgba(16, 20, 56, 0.8);
+
+}
+
+div.listProd {
+    display: grid;
+    grid-column: 2/3;
+    column-gap: 0px;
+    grid-row: 2/6;
+    height: 465.3333435058594px;
+    width: 875.2000732421875px;
+    left: 460.79998779296875px;
+    top: 234.66665649414062px;
+    border-radius: 8px;
+
+    background: rgba(217, 217, 217, 0.8);
+
+}
+
+h1.lista {
+    text-align: center;
+    height: 36px;
+    width: 875.2000732421875px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: [object Object]px;
+
+    margin-top: 0;
+    color: white;
+    background: rgba(16, 20, 56, 0.8);
+
+}
+
+div.sub {
+    height: 93.33333587646484px;
+    width: 875.2000732421875px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: 8px;
+
+    display: grid;
+    grid-column: 2/3;
+    background-color: hsla(0, 0%, 85%, 0.8);
+}
+
+h1.subs {
+    text-align: center;
+    height: 36px;
+    width: 875.2000732421875px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: [object Object]px;
+
+    margin-top: 0;
+    color: white;
+    background: rgba(16, 20, 56, 0.8);
+
+}
+
+div.totalRec {
+    height: 81.33333587646484px;
+    width: 425.5999755859375px;
+    left: 460.79998779296875px;
+    top: 862.6666259765625px;
+    border-radius: 8px;
+
+
+    display: grid;
+    grid-column: 2/3;
+    background-color: hsla(0, 0%, 85%, 0.8);
+}
+h1.tot {
+    text-align: center;
+    height: 36px;
+    width: 425.5999755859375px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: [object Object]px;
+
+    margin-top: 0;
+    color: white;
+    background: rgba(16, 20, 56, 0.8);
+
+}
+div.troco {
+
+    height: 81.33333587646484px;
+    width: 425.5999755859375px;
+    left: 460.79998779296875px;
+    border-radius: 8px;
+
+
+    display: grid;
+    grid-column: 3;
+    background-color: hsla(0, 0%, 85%, 0.8);
+}
+h1.troc {
+    text-align: center;
+    height: 36px;
+    width: 425.5999755859375px;
+    left: 96px;
+    top: 245.33334350585938px;
+    border-radius: [object Object]px;
+
+    margin-top: 0;
+    color: white;
+    background: rgba(16, 20, 56, 0.8);
+
+}
