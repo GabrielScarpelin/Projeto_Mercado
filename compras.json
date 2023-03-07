@@ -1,0 +1,50 @@
+[
+    {
+        "produtos" : [
+            {
+                "id":1,
+                "nome": "Arroz",
+                "valor_unit": 20.5,
+                "quantity": 2
+                
+            },{
+                "id":2,
+                "nome": "Feijao",
+                "valor_unit": 8.50,
+                "quantity": 4
+                
+            },{
+                "id":3,
+                "nome": "suco",
+                "valor_unit": 1.5,
+                "quantity": 7
+                
+            },{
+                "id":4,
+                "nome": "Leite",
+                "valor_unit": 4.5,
+                "quantity": 6
+                
+            },{
+                "id":5,
+                "nome": "Bolacha",
+                "valor_unit": 2.5,
+                "quantity": 5
+                
+            },{
+                "id":6,
+                "nome": "Ovo 12 Unidades",
+                "valor_unit": 12.0,
+                "quantity": 1
+                
+            }
+        ],
+        "data": "22/02/2023 16:23:32",
+        "paymentMethod": "Dinheiro",
+        "id": 2,
+        "cpf": "XXX.XXX.XXX-XX",
+        "totalQuantity": 25,
+        "valorTotal": 75.00,
+        "numeroNotaFiscal": "545SAD422FDBAD4"
+    }
+]
