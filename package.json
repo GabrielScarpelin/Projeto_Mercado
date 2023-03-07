@@ -1,0 +1,22 @@
+{
+  "name": "user_login",
+  "version": "1.0.0",
+  "description": "Cadastro de Usuario",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielScarpelin/Projeto_Mercado.git"
+  },
+  "author": "Rafael Souza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GabrielScarpelin/Projeto_Mercado/issues"
+  },
+  "homepage": "https://github.com/GabrielScarpelin/Projeto_Mercado#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
