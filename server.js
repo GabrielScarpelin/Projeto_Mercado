@@ -12,11 +12,11 @@ server.use(express.static('public'))
 server.use(express.json())
 
 server.get('/', (req, res, next) => {
-    res.render('nf.html', json[0])
+    res.render('Caixa.html')
 })
 
 server.post('/finalizar', (req, res, next) => {
-    res.send("OK")
+    res.render('CaixaRes.html')
 })
 server.get('/nf', (req, res, next) => {
     res.render('nf.html', json[0])

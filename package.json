@@ -2,9 +2,10 @@
   "name": "user_login",
   "version": "1.0.0",
   "description": "Cadastro de Usuario",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "npm start"
+    "test": "npm start",
+    "start": "nodemon"
   },
   "repository": {
     "type": "git",
