@@ -24,7 +24,7 @@
         </div>
         <div class="codBar">
             <h1 class="barras">CODIGO DE BARRAS</h1>
-            <input type="text">
+            <input type="number" id="codBarrasInput">
         </div>
         <div class="valUni">
             <h1 class="valor">VALOR UNITARIO</h1>
@@ -35,8 +35,8 @@
             <p></p>
         </div>
         <div class="codPro">
-            <H1 class="produto">CODIGO DO PRODUTO</H1>
-            <p></p>
+            <H1 class="produto">QUANTIDADE</H1>
+            <input type="number" id="qtdInput">
         </div>
         <div class="legenda">
             <h1 class="leg">Aperte F10 para finalizar a compra</h1>
@@ -49,6 +49,9 @@
             <table>
                 <tr>
                     <th>
+                        Codigo
+                    </th>
+                    <th>
                         Nome
                     </th>
                     <th>
@@ -57,7 +60,6 @@
                     <th>
                         Preço
                     </th>
-
                 </tr>
             </table>
         </div>
@@ -69,6 +71,71 @@
 
     </DIV>
 
-</body>
+    <div id="modalRemoveProd">
+        <h2>Remover Produto</h2>
+        <div>
+            <label for="">Código</label>
+            <input type="number" name="" id="idProdRemove">
+        </div>
+        <button onclick="botaoExcluirProd()">Excluir</button>
+    </div>
+    <div id="modalFinish">
+        <h2>Finalizar compra</h2>
+        <div class="inputs">
+            <label for="">Nome</label>
+            <input type="number" name="" id="nameInput">
+        </div>
+        <div class="inputs">
+            <label for="">Telefone</label>
+            <input type="number" name="" id="telInput">
+        </div>
+        <div class="inputs">
+            <label for="">CPF</label>
+            <input type="number" name="" id="cpfInput">
+        </div>
+        <div class="inputsRadio">
+            <input type="radio" name="paymentMethod" id="pixRadio" style="display: none;">
+            <label for="pixRadio">
+                <img src="https://cdn.icon-icons.com/icons2/3245/PNG/512/pix_icon_198027.png" alt="" srcset="">
+                <h5>Pix</h5>
+            </label>
+            <input type="radio" name="paymentMethod" id="dinheiroRadio" style="display: none;">
+            <label for="dinheiroRadio">
+                <img src="https://cdn-icons-png.flaticon.com/512/9093/9093171.png" alt="" srcset="">
+                <h5>Dinheiro</h5>
+            </label>
+            <input type="radio" name="paymentMethod" id="debitoRadio" style="display: none;">
+            <label for="debitoRadio">
+                <img src="https://cdn-icons-png.flaticon.com/512/8016/8016582.png" alt="" srcset="">
+                <h5>Débito</h5>
 
+            </label>
+            <input type="radio" name="paymentMethod" id="creditoRadio" style="display: none;">
+            <label for="creditoRadio">
+                <img src="https://cdn-icons-png.flaticon.com/512/3190/3190354.png" alt="" srcset="">
+                <h5>Crédito</h5>
+
+            </label>
+        </div>
+        <button onclick="finalizarCompra()">Finalizar</button>
+    </div>
+</body>
+<script>
+    window.onload = ()=>{
+        addEventListener('keypress', (key)=>{
+            const modalNotOpened = document.getElementById('modalRemoveProd').classList.contains('open') || document.getElementById('modalFinish').classList.contains('open')
+            console.log(key.key)
+            if (key.key === 'Enter' && !modalNotOpened){
+                takeProd()
+            }
+            if (key.key === '9'){
+                document.getElementById('modalRemoveProd').classList.toggle('open')
+            }
+            if (key.key === '8'){
+                document.getElementById('modalFinish').classList.toggle('open')
+            }
+        })
+    }
+</script>
+<script src="/js/script.js"></script>
 </html>

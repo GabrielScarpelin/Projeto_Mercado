@@ -201,7 +201,6 @@ h1.produto {
 }
 
 div.listProd {
-    display: grid;
     grid-column: 2/3;
     column-gap: 0px;
     grid-row: 2/6;
@@ -337,7 +336,10 @@ input {
   }
   table{
     position: relative;
-    top: -299px;
+    width: 100%;
+  }
+  th, td{
+    text-align: center;
   }
   div.containerMain{
     width: 100%;
@@ -373,3 +375,103 @@ input {
     word-break: break-word;
     border: 0;
   }
+
+    #modalRemoveProd{
+        width: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(16, 20, 56, 1);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        border-radius: 1rem;
+        visibility: hidden;
+        
+    }
+    #modalRemoveProd input{
+        width: 50%;
+        position: initial;
+    }
+    #modalRemoveProd div{
+        color: white;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    #modalRemoveProd button{
+        margin-top: 2rem;
+    }
+    #modalRemoveProd.open{
+        visibility: visible;
+    }
+    #modalFinish{
+        width: fit-content;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(228, 228, 228);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        border-radius: 1rem;
+        visibility: hidden;
+        
+    }
+    #modalFinish input{
+        width: 50%;
+        position: initial;
+    }
+    #modalFinish .inputs{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        align-items: center;    
+    }
+    #modalFinish div{
+        color: rgb(0, 0, 0);
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    #modalFinish button{
+        margin-top: 2rem;
+    }
+    #modalFinish.open{
+        visibility: visible;
+    }
+    #modalFinish img{
+        width: 32px;
+        height: 32px;
+    }
+    #modalFinish .inputsRadio label{
+        padding: 1.5rem;
+        border: 1px solid hsl(231, 11%, 63%);
+        border-radius: .8rem;
+        background-color: white;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .stepPage#step2 .inputsRadio .labelSelectPlanRadio h5{
+        margin-top: 2.2rem;
+        color: hsl(213, 96%, 18%);
+        font-size: 1rem;
+    }
+
+    
+    #modalFinish .inputsRadio input[type="radio"]:checked+ label{
+        background-color: hsla(243, 100%, 62%, 0.5);
+        border-color: hsla(243, 100%, 62%, 1);
+    }
