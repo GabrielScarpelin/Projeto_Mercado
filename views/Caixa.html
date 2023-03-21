@@ -39,8 +39,8 @@
             <input type="number" id="qtdInput">
         </div>
         <div class="legenda">
-            <h1 class="leg">Aperte F10 para finalizar a compra</h1>
-            <h1 class="leg">Aperte F9 para excluir produto</h1>
+            <h1 class="leg">Aperte + para finalizar a compra</h1>
+            <h1 class="leg">Aperte * para excluir produto</h1>
         </div>
         
 
@@ -83,7 +83,7 @@
         <h2>Finalizar compra</h2>
         <div class="inputs">
             <label for="">Nome</label>
-            <input type="number" name="" id="nameInput">
+            <input type="text" name="" id="nameInput">
         </div>
         <div class="inputs">
             <label for="">Telefone</label>
@@ -128,10 +128,10 @@
             if (key.key === 'Enter' && !modalNotOpened){
                 takeProd()
             }
-            if (key.key === '9'){
+            if (key.key === '*'){
                 document.getElementById('modalRemoveProd').classList.toggle('open')
             }
-            if (key.key === '8'){
+            if (key.key === '+'){
                 document.getElementById('modalFinish').classList.toggle('open')
             }
         })

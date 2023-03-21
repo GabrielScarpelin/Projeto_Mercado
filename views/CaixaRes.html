@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/stylecaixa.css">
+    <link rel="stylesheet" href="../css/stylecaixa.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obrigado</title>
@@ -13,15 +13,24 @@
     <h1 class="mercado">MERCADO</h1>
     <h2 class="joaquim">JOAQUIM</h2>
     <div class="containerMain">
-
+        
         <div class="final">
             <h1 class="frase">
                 Obrigado pela compra! <br>
                 Volte sempre. O Mercado <br> Joaquim agradece a preferência.
             </h1>
-            <button class="seuButao">Abrir nota fiscal</button>
+            <button class="seuButao" onclick="openNf({{id}})">Abrir nota fiscal</button>
         </div>
     </div>
 </body>
-
+<script>
+    function openNf(nfId){
+        location.pathname = '/nf/'+nfId
+    }
+    window.onload = ()=>{
+        setTimeout(()=>{
+            location.pathname = '/'
+        }, 10000)
+    }
+</script>
 </html>

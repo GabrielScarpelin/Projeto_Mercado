@@ -429,6 +429,10 @@ input {
         width: 50%;
         position: initial;
     }
+    #modalFinish .inputs label{
+        width: 20%;
+        position: initial;
+    }
     #modalFinish .inputs{
         display: flex;
         justify-content: flex-start;
